@@ -13,8 +13,8 @@ POST https://api-z77zvpmgsa-uc.a.run.app/v1/students/signIn
 Content-Type: application/json
 
 {
-    "email" : "dora@gmail.com",
-    "password":"dora12345"
+    "email" : "curl@gmail.com",
+    "password":"hello12345"
 }
 
 ### get data 
@@ -26,7 +26,7 @@ GET https://api-z77zvpmgsa-uc.a.run.app/v1/students/token
 
 ### sign out
 DELETE https://api-z77zvpmgsa-uc.a.run.app/v1/students/signOut
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IlhwSjZPblZ6SG9oMUJLblZ2OWVia0F2VFdzUDIiLCJmaXJzdE5hbWUiOiJkb3JhSlIiLCJlbWFpbCI6ImRvcmFAZ21haWwuY29tIiwicm9sZSI6InN0dWRlbnQiLCJpYXQiOjE3MjczMzc3NDAsImV4cCI6MTcyNzM0MTM0MH0.atgHLQfK94TfOsuA3rjD4c1oKWVttygZ2maKN-7Rc-0
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImdqdmFGaGVlcHVVZllBb3VJZG13QTBrZkFDWDIiLCJmaXJzdE5hbWUiOiJoZWxsb1dvcmxkIiwiZW1haWwiOiJjdXJsQGdtYWlsLmNvbSIsInJvbGUiOiJzdHVkZW50IiwiaWF0IjoxNzI3MzM4MTg4LCJleHAiOjE3MjczNDE3ODh9.IgWPGKm_rvpPH6qbpqsP_DFtZCk0rLW9tcrmFCjLWwk
 
 ###
 POST https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyA4EQ-4dtoZGt8zl62O227g4PlrFnCSZAE
