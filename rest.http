@@ -1,33 +1,32 @@
-POST http://127.0.0.1:5001/studyotutorapp/us-central1/api/v1/students/signUp
+POST https://api-z77zvpmgsa-uc.a.run.app/v1/students/signUp
 Content-Type: application/json
 
 {
-    "email" : "elon@gmail.com",
-    "password":"elon12345",
-    "firstName":"elonJR",
-    "lastName":"elonMus"
+    "email" : "curl@gmail.com",
+    "password":"hello12345",
+    "firstName":"helloWorld",
+    "lastName":"helloWorld"
 }
 
 ### sign in
-POST http://127.0.0.1:5001/studyotutorapp/us-central1/api/v1/students/signIn
+POST https://api-z77zvpmgsa-uc.a.run.app/v1/students/signIn
 Content-Type: application/json
 
 {
-    "email" : "admin@gmail.com",
-    "password":"admin12345"
+    "email" : "dora@gmail.com",
+    "password":"dora12345"
 }
 
 ### get data 
-GET http://127.0.0.1:5001/studyotutorapp/us-central1/api/v1/students/
+GET https://api-z77zvpmgsa-uc.a.run.app/v1/students/
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6InhmUHZwU0FYYWxRVmR5S0UzUlhCSThoOERrejIiLCJmaXJzdF9uYW1lIjoiYWRtaW4xMiIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwicm9sZSI6InN0dWRlbnQiLCJpYXQiOjE3MjczMzM1ODAsImV4cCI6MTcyNzMzNzE4MH0.nMvFBe4wvuE1CjQcZmMkz6YfEFgtcCj_aWxS4_keR5g 
 
 ### get token 
-GET http://127.0.0.1:5001/studyotutorapp/us-central1/api/v1/students/token
+GET https://api-z77zvpmgsa-uc.a.run.app/v1/students/token
 
 ### sign out
-DELETE http://127.0.0.1:5001/studyotutorapp/us-central1/api/v1/students/signOut
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6InhmUHZwU0FYYWxRVmR5S0UzUlhCSThoOERrejIiLCJmaXJzdF9uYW1lIjoiYWRtaW4xMiIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwicm9sZSI6InN0dWRlbnQiLCJpYXQiOjE3MjczMzM1ODAsImV4cCI6MTcyNzMzNzE4MH0.nMvFBe4wvuE1CjQcZmMkz6YfEFgtcCj_aWxS4_keR5g
-
+DELETE https://api-z77zvpmgsa-uc.a.run.app/v1/students/signOut
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IlhwSjZPblZ6SG9oMUJLblZ2OWVia0F2VFdzUDIiLCJmaXJzdE5hbWUiOiJkb3JhSlIiLCJlbWFpbCI6ImRvcmFAZ21haWwuY29tIiwicm9sZSI6InN0dWRlbnQiLCJpYXQiOjE3MjczMzc3NDAsImV4cCI6MTcyNzM0MTM0MH0.atgHLQfK94TfOsuA3rjD4c1oKWVttygZ2maKN-7Rc-0
 
 ###
 POST https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyA4EQ-4dtoZGt8zl62O227g4PlrFnCSZAE

@@ -97,6 +97,8 @@ export class AuthService {
       throw new ResponseError(400, "email or password wrong");
     }
 
+    await auth.setCustomUserClaims(uid, { role: "student" });
+
     //------------------trigger signin--------------------------
     const url = `https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=${process.env.API_KEY}`;
     await fetch(url, {
@@ -108,8 +110,8 @@ export class AuthService {
     });
 
     // environment variable
-    const accessTokenKey = process.env.ACCESS_TOKEN_SECRET as string;
-    const refreshTokenKey = process.env.REFRESH_TOKEN_SECRET as string;
+    const accessTokenKey = process.env.JWT_ACCESS_TOKEN_SECRET as string;
+    const refreshTokenKey = process.env.JWT_REFRESH_TOKEN_SECRET as string;
 
     const payload = {
       id: uid,
@@ -182,8 +184,8 @@ export class AuthService {
       throw new ResponseError(401, "unautorized");
     }
 
-    const accessTokenKey = process.env.ACCESS_TOKEN_SECRET as string;
-    const refreshTokenKey = process.env.REFRESH_TOKEN_SECRET as string;
+    const accessTokenKey = process.env.JWT_ACCESS_TOKEN_SECRET as string;
+    const refreshTokenKey = process.env.JWT_REFRESH_TOKEN_SECRET as string;
 
     const studentPayload = this.decodeJwt(token, refreshTokenKey);
 
